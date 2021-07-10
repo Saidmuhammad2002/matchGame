@@ -98,7 +98,7 @@ class MixOrMatch {
         card2.classList.add('matched');
         this.audioController.match();
         if(this.matchedCards.length===this.cardsArray.length)
-        this.victory();
+        this.victorys();
 
     }
 
@@ -132,7 +132,7 @@ class MixOrMatch {
         document.getElementById('game-over-text').classList.add('visible');
     }
 
-    victory() {
+    victorys() {
         clearInterval(this.countDown);
         this.audioController.victory();
         document.getElementById('victory-text').classList.add('visible');
