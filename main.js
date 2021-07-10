@@ -122,11 +122,11 @@ class MixOrMatch {
             this.timeRemaining--;
             this.timer.innerText=this.timeRemaining;
             if (this.timeRemaining===0)
-            this.gameOver();
+            this.gameOvers();
         },1000);
     }
 
-    gameOver() {
+    gameOvers() {
         clearInterval(this.countDown);
         this.audioController.gameOver();
         document.getElementById('game-over-text').classList.add('visible');
